@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+// O código serve para saber a nota máxima e a nota mínima de n alunos de uma sala de aula.
+// Utiliza-se óbviamente laços de repetição.
+
+int n,contador,notamaior,notamenor,nota;
+
+int main(){
+	printf("Escreva o número de alunos na classe: ");
+	scanf("%d",&n);
+	
+	if(n > 0){
+	notamaior=0;
+	notamenor=100;
+	contador = 1;
+	 while(contador <= n){
+	 	printf("Escreva a nota de um aluno: ");
+	 	scanf("%d",&nota);
+	 	contador = contador +1;
+	 	if (nota >= notamaior){
+	 		notamaior = nota;
+	 	}
+	 	if(nota<=notamenor){
+	 		notamenor=nota;
+	 	}
+	 	
+	
+	 }
+	 printf("\nA maior nota e %d",notamaior);
+	 	printf("\nA menor nota e %d",notamenor);
+}
+
+else{
+	printf("Ta de zuera!!!");
+}
+	   return(0);
+}
