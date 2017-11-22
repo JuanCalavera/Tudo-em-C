@@ -1,0 +1,75 @@
+
+#include<stdio.h>
+#include<conio.h>
+
+int main(void)
+{
+//* abaixo estao as variaveis ------------------------------------------>nao estou conseguindo rodar o programa,
+    char jogador1 ;
+    printf("Digite o nome do jogador 1:  \n");
+    scanf("%s\n", jogador1 );
+      char jogador2 ;
+      printf("Digite o nome do jogador 2:  \n");
+      scanf("%s\n",jogador2);
+      int l,i,j;
+      
+	  }
+     char Matriz[3][3]; 
+     
+//* abaixo esta o tabuleiro do jogo que deve aparecer sempre , eu nao sei como faz isso
+void imprime(){
+	printf("7|8|9\n");
+	printf("__________\n");
+	printf("4|5|6\n");
+	printf("__________\n");
+	printf("1|2|3\n\n\n");
+	
+	printf("%c|%c|%c \n",Matriz [0][0],Matriz [0][1],Matriz [0][2]);
+	printf("__________ \n");
+	printf("%c|%c|%c \n",Matriz  [1][0],Matriz [1][1],Matriz [1][2]);
+	printf("__________\n");
+	printf("%c|%c|%c\n",Matriz  [2][0],Matriz [2][1],Matriz [2][2]);
+	printf("__________\n");
+}
+int main(int argc, char *argv[]) {
+
+
+//* abaixo estao todas as possibilidades de jogo que mostrarao se o jogador ganhou ou nao 
+        if((Matriz[0][0]==O && Matriz[0][1]==O && Matriz[0][2]==O)||
+           (Matriz[1][0]==O && Matriz[1][1]==O && Matriz[1][2]==O)||
+           (Matriz[2][0]==O && Matriz[2][1]==O && Matriz[2][2]==O)||
+           (Matriz[0][0]==O && Matriz[1][0]==O && Matriz[2][0]==O)||
+           (Matriz[0][1]==O && Matriz[1][1]==O && Matriz[2][1]==O)||
+           (Matriz[0][2]==O && Matriz[1][2]==O && Matriz[2][2]==O)||
+           (Matriz[0][0]==O && Matriz[1][1]==O && Matriz[2][2]==O)||
+           (Matriz[0][2]==O && Matriz[1][1]==O && Matriz[2][0]==O))
+        {
+            scanf("%s",&jogador1);
+			printf("\n  Jogador 1,PARABENS VOCE VENCEU!!!");
+            break;
+        }
+        if((Matriz[0][0]==X && Matriz[0][1]==X && Matriz[0][2]==X)||
+           (Matriz[1][0]==X && Matriz[1][1]==X && Matriz[1][2]==X)||
+           (Matriz[2][0]==X && Matriz[2][1]==X && Matriz[2][2]==X)||
+           (Matriz[0][0]==X && Matriz[1][0]==X && Matriz[2][0]==X)||
+           (Matriz[0][1]==X && Matriz[1][1]==X && Matriz[2][1]==X)||
+           (Matriz[0][2]==X && Matriz[1][2]==X && Matriz[2][2]==X)||
+           (Matriz[0][0]==X && Matriz[1][1]==X && Matriz[2][2]==X)||
+           (Matriz[0][2]==X && Matriz[1][1]==X && Matriz[2][0]==X))
+        {
+            scanf("%s",&jogador2);
+			printf("\n\n\n\n PARABENS VOCE VENCEU!!!");
+            
+            break;
+        }
+
+        if(l==9)
+        {
+            printf("PARTIDA EMPATADA");
+            break;
+        }
+
+    }
+    getch();
+    return(0);
+}
