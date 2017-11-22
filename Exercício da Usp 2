@@ -1,0 +1,30 @@
+#include <stdio.h>
+// O código serve para calcular números elevados
+int x;
+int n;
+int i;
+
+int main(){
+printf("Escreva o numero: ");
+scanf("%d",&x);
+
+printf("Escreva o elevado: ");
+scanf("%d",&n);
+
+if(n<=0){
+	printf("O elevado nao pode ser igual a zero");
+}
+
+else{
+	i=1;
+	while(i<n){
+		x=x*x;
+		i=i+1;
+	}
+	
+	printf("O resultado e: %d",x);
+	
+}
+
+    return(0);
+}
