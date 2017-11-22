@@ -1,5 +1,5 @@
 # include <stdio.h>
-
+// Esse código é feito para saber se o número é par ou impar
 int n;
 int i;
 int impar;
