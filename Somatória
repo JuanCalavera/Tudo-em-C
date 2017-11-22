@@ -1,4 +1,6 @@
 #include <stdio.h>
+// Esse código serve para fazer somatórias utilizando laços de repetição.
+
 int main(){
 
 int n;
