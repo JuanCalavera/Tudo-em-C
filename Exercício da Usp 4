@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+//Este código serve para fazer uma sequência de somas dos números pares de um número.
+
+int n,soma,par;
+
+int main(){
+	printf("Escreva o numero: ");
+	scanf("%d",&n);
+	
+	
+	par=0;
+	soma= 0;
+	while(par<n){
+		par = par +2;
+		soma = soma +par;
+	}
+	
+	printf("A soma da sequência par é:%d",soma);
+	
+	return(0);
+}
+
